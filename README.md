@@ -3,7 +3,7 @@
 ### A beautiful minimal and accessible portfolio template for Developers ✨.
 
 
-![Portfolio Gif](/images/portfolio.png)
+![Portfolio Gif](/images/Portfolio.png)
 
 ## Features
 
