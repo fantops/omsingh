@@ -108,7 +108,7 @@ body {
 }
 
 section {
-    padding: var(--gutter-huge) 0;
+    padding: var(--gutter-normal) 0 var(--gutter-huge) 0;
     border-bottom: var(--border-light);
 }
 
@@ -125,7 +125,7 @@ h1,
 h2,
 h3 {
     font-family: 'Jost', sans-serif;
-    font-weight: 550;
+    font-weight: 450;
     line-height: var(--line-height-normal);
     color: var(--white);
 }
@@ -133,7 +133,7 @@ h3 {
 .heading-primary {
     line-height: 1;
     font-size: var(--font-size-huge);
-    font-weight: 550;
+    font-weight: 450;
 }
 
 @media(max-width: 900px) {
@@ -190,12 +190,15 @@ p {
 /* --------------------------------------- */
 
 a {
-    color: var(--white);
+    color: #719dca;
+    /*text-decoration: none;*/
     font-weight: 400;
     font-family: 'Jost', sans-serif;
     transition: all .2s;
     outline: 2px solid transparent;
 }
+
+
 
 ::-moz-focus-inner {
     border: 0;
@@ -209,10 +212,6 @@ a:focus {
 body:not(.user-is-tabbing) button:focus,
 body:not(.user-is-tabbing) a:focus {
     outline: none;
-}
-
-.link:hover {
-    color: var(--pink);
 }
 
 .btn {
@@ -508,31 +507,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-/* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
 
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
-}
 
 /* --------------------------------------- */
 /* ----- About ----- */
@@ -566,6 +541,13 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+#collegename{
+    text-decoration: none;
+}
+#collegename:hover{
+    text-decoration: underline;
+    color: var(--blue);
+}
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
@@ -596,17 +578,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .footer__social-image {
     height: 4rem;
-}
-
-.footer__github-buttons {
-    display: flex;
-    justify-content: center;
-}
-
-.footer__github-buttons iframe {
-    height: 2.5rem;
-    width: 80px;
-    transform: translateY(3px);
 }
 
 @media(max-width: 500px) {
