@@ -23,7 +23,7 @@
 You'll need [Git](https://git-scm.com) to be installed on your computer. 
 ```
 # Clone this repository
-$ git clone https://github.com/ExtremePrOM/home.git
+$ git clone https://github.com/fantops/omsingh.git
 ```
 
 ## Editing the Template 🔨
@@ -129,10 +129,10 @@ Each div with class `work__box` represents a project, replace the contents of th
               </ul>
 
               <div class="work__links">
-                <a href="https://extremeprom.github.io/home/" target="_blank" class="link__text">
+                <a href="https://github.com/fantops/omsingh" target="_blank" class="link__text">
                   Visit Site <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/ExtremePrOM/home" title="View Source Code" target="_blank">
+                <a href="https://github.com/fantops/omsingh" title="View Source Code" target="_blank">
                   <img src="./images/github.svg" class="work__code" alt="GitHub">
                 </a>
               </div>
@@ -195,7 +195,7 @@ For changing the screenshot:
           </a>
         </li>
         <li class="footer__social-link-item">
-          <a href="https://github.com/ExtremePrOM" title="Link to Github Profile">
+          <a href="https://github.com/fantops" title="Link to Github Profile">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
@@ -205,11 +205,6 @@ For changing the screenshot:
           </a>
         </li>
       </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://extremeprom.github.io/home/" class="link">Om Singh</a>.
-      </p>
     </div>
   </footer>
 ```
