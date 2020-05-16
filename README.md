@@ -45,7 +45,7 @@ In all of the places where you're supposed to fill your information you'll find 
     Om Singh | Engineer !
   </title>
 
-  <meta name="description" content="Add small description of yourslef.">
+  <meta name="description" content="Add small description of yourself.">
   <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
   <meta name="keywords" content="Put your name, skills and some coding keywords" />
   <link rel="stylesheet" href="index.css" />
