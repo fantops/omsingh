@@ -20,21 +20,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/titleLogo.png" />
-
-  <!-- Put your site title here -->
-  <title>
-    Om Singh | Engineer !
-  </title>
-
-  <meta name="description" content="Add small description of yourself.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <link rel="preload" href="./images/MyPhoto.jpg" as="image" />
+  <link rel="preload" href="./images/Portfolio.png" as="image" />
+  <title>Om Singh | Engineer !</title>
+  <meta name="description" content="Add small description of yourself." />
   <meta name="keywords" content="Put your name, skills and some coding keywords" />
   <link rel="stylesheet" href="index.css" />
+  <meta property="og:title" content="Om Singh | Engineer!" />
+  <meta property="og:description" content="Engineer by profession, social worker by choice!" />
+  <meta property="og:image" content="./images/MyPhoto.jpg" />
+  <meta property="og:url" content="https://fantops.github.io/omsingh/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Om Singh | Engineer!" />
+  <meta name="twitter:description" content="Engineer by profession, social worker by choice!" />
+  <meta name="twitter:image" content="./images/MyPhoto.jpg" />
 </head>
 
 <body>
-
-  <!-- ***** Header ***** -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header class="header" role="banner" id="top">
     <div class="row">
@@ -45,43 +49,33 @@
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
+      <button id="theme-toggle" class="btn btn--pink" aria-label="Toggle Dark Mode">Dark Mode</button>
     </div>
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
           <span>Om Prakash Singh</span>
         </h1>
-        <!-- Put a small paragraph about yourself -->
         <p>Engineer by profession, social worker by choice !</p>
       </div>
     </div>
   </header>
 
   <main role="main">
-
-    <!-- ***** About Me ***** -->
-
     <section class="about" id="about">
       <div class="row">
         <h2>About Me</h2>
         <div class="about__content">
           <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
             <p>
-              I am a post graduate from <a id="collegename" href="http://www.nitdgp.ac.in/">National Institute of Technology, Durgapur</a>, currently working as a Engineer at L&T Technology Services in Bangalore, India.<br>
-
+              I am a post graduate from <a id="college-link" href="http://www.nitdgp.ac.in/">National Institute of Technology, Durgapur</a>, currently working as a Engineer at L&T Technology Services in Bangalore, India.<br>
               My Bachelors and masters are in Computer Science Engineering and I am having interest towards Embedded OS and its working.<br><br>
-
-              Apart from this, on my personal side I am a volunteer with Youth For Seva and adding my bit to change the way of education for underpriviledged society.
+              Apart from this, on my personal side I am a volunteer with Youth For Seva and adding my bit to change the way of education for underprivileged society.
             </p>
-            <!-- Provide a link to your resume -->
-            <a href="./files/Om-Resume.pdf" target="_blank" class="btn">My Resume</a>
+            <a id="resume-link" href="./files/Om-Resume.pdf" target="_blank" class="btn">My Resume</a>
           </div>
-
           <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/MyPhoto.jpg" alt="" />
+            <img class="about__photo" src="./images/MyPhoto.jpg" alt="Photo of Om Singh" />
           </div>
         </div>
       </div>
@@ -91,21 +85,15 @@
       <div class="row">
         <h2>My Projects</h2>
         <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
           <div class="work__box">
             <div class="work__text">
               <h3>Portfolio Template</h3>
-              <p>
-                A free Open Source Portfolio for anyone to use for free.
-              </p>
+              <p>A free Open Source Portfolio for anyone to use for free.</p>
               <ul class="work__list">
                 <li>HTML</li>
                 <li>SCSS</li>
                 <li>JavaScript</li>
               </ul>
-
               <div class="work__links">
                 <a href="https://fantops.github.io/omsingh/" target="_blank" class="link__text">
                   Visit Site <span>&rarr;</span>
@@ -116,53 +104,45 @@
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/Portfolio.png" class="work__image" alt="Open Source Project" />
+              <img src="./images/Portfolio.png" class="work__image" alt="Screenshot of Portfolio Project" />
             </div>
           </div>
+        </div>
       </div>
-    </div>
     </section>
-
   </main>
-
-  <!-- ***** Contact ***** -->
 
   <section class="contact" id="contact">
     <div class="row">
       <h2>Get in Touch</h2>
       <div class="contact__info">
-        <!-- Replace the email with yours -->
         <a href="mailto:omprakash300@gmail.com" class="btn">Mail me !!</a>
       </div>
     </div>
   </section>
 
-  <!-- ***** Footer ***** -->
-
   <footer role="contentinfo" class="footer">
     <div class="row">
-      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
           <a href="https://twitter.com/omsinghbaba/" title="Link to Twitter Profile" target="_blank">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter Profile Icon">
           </a>
         </li>
         <li class="footer__social-link-item">
           <a href="https://github.com/fantops" title="Link to Github Profile" target="_blank">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+            <img src="./images/github.svg" class="footer__social-image" alt="GitHub Profile Icon">
           </a>
         </li>
         <li class="footer__social-link-item">
           <a href="https://www.linkedin.com/in/omsingh-nitd/" target="_blank">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="LinkedIn Profile Icon">
           </a>
         </li>
       </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
       <p>
-        &copy; 2020 - Template designed & developed by <a href="https://fantops.github.io/omsingh/" class="link">Om Singh</a>.
+        &copy; <span id="year"></span> - Template designed & developed by 
+        <a href="https://fantops.github.io/omsingh/" class="link">Om Singh</a>.
       </p>
     </div>
   </footer>
@@ -170,7 +150,11 @@
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
-  <script src="./index.js"></script>
+  <script src="./data.js" defer></script>
+  <script src="./index.js" defer></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
