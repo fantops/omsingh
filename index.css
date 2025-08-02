@@ -150,9 +150,15 @@ h1,
 h2,
 h3 {
     font-family: 'Jost', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 450;
+    font-weight: 600;
     line-height: var(--line-height-normal);
-    color: var(--white);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3 {
+    color: var(--text-color);
 }
 
 .heading-primary {
@@ -168,17 +174,27 @@ h3 {
 }
 
 h2 {
-    font-size: var(--font-size-medium-1);
+    font-size: var(--font-size-large);
     margin-bottom: var(--gutter-small);
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+[data-theme="dark"] h2 {
+    color: var(--text-color);
 }
 
 h2::after {
     content: '';
     display: block;
-    height: 2px;
-    width: 8rem;
+    height: 3px;
+    width: 10rem;
     background: var(--pink);
     margin: var(--gutter-small) 0;
+}
+
+[data-theme="dark"] h2::after {
+    background: var(--blue);
 }
 
 h3 {
@@ -482,9 +498,16 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__boxes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--gutter-normal);
     margin-top: var(--gutter-normal);
+}
+
+@media(max-width: 900px) {
+    .work__boxes {
+        grid-template-columns: 1fr;
+        gap: var(--gutter-small);
+    }
 }
 
 .work__box {
@@ -520,6 +543,7 @@ body:not(.user-is-tabbing) a:focus {
     color: var(--pink);
     margin-bottom: 0.5rem;
     font-size: var(--font-size-medium);
+    font-weight: 700;
 }
 
 [data-theme="dark"] .work__text h3 {

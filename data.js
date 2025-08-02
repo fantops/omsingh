@@ -31,7 +31,6 @@ const profileData = {
       technologies: ["PowerShell", "AI/ML Monitoring", "Windows APIs", "Performance Profiling", "NPU Optimization"],
       liveLink: "#",
       sourceLink: "#",
-      image: "./images/Portfolio.png",
       year: "2025",
       company: "Microsoft"
     },
@@ -41,7 +40,6 @@ const profileData = {
       technologies: ["PowerShell", "Test Automation", "AI Model Validation", "Cross-platform Integration", "API Testing"],
       liveLink: "#",
       sourceLink: "#",
-      image: "./images/Portfolio.png",
       year: "2024",
       company: "Microsoft"
     },
@@ -51,7 +49,6 @@ const profileData = {
       technologies: ["PowerShell", "Test Automation", "AI Camera Features", "Performance Optimization", "Windows APIs"],
       liveLink: "#",
       sourceLink: "#",
-      image: "./images/Portfolio.png",
       year: "2024",
       company: "Microsoft"
     },
@@ -61,7 +58,6 @@ const profileData = {
       technologies: ["C++", "Firmware Development", "CXL Interface", "Power Management", "PCIe Gen6"],
       liveLink: "#",
       sourceLink: "#",
-      image: "./images/Portfolio.png",
       year: "2023-2024",
       company: "Intel"
     },
@@ -71,7 +67,6 @@ const profileData = {
       technologies: ["C++", "Simics", "Zebu", "Perspec", "Silicon Validation", "Power Management"],
       liveLink: "#",
       sourceLink: "#",
-      image: "./images/Portfolio.png",
       year: "2021-2024",
       company: "Intel"
     },
@@ -81,7 +76,6 @@ const profileData = {
       technologies: ["Python", "NVMe Protocol", "Test Automation", "Thermal Management", "JTAG", "Power Validation"],
       liveLink: "#",
       sourceLink: "#",
-      image: "./images/Portfolio.png",
       year: "2020-2021",
       company: "L&T Technology Services"
     },
@@ -91,7 +85,6 @@ const profileData = {
       technologies: ["HTML", "CSS", "JavaScript", "SCSS", "Responsive Design"],
       liveLink: "https://fantops.github.io/omsingh/",
       sourceLink: "https://github.com/fantops/omsingh",
-      image: "./images/Portfolio.png",
       year: "2024",
       company: "Personal Project"
     },
