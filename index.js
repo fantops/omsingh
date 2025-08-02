@@ -81,21 +81,32 @@ const populateField = (id, value, isLink = false) => {
 };
 
 const renderProject = (project) => {
+  const liveLink = project.liveLink !== "#" ? 
+    `<a href="${project.liveLink}" target="_blank" class="link__text">
+      Visit Site <span>&rarr;</span>
+    </a>` : '';
+  
+  const sourceLink = project.sourceLink !== "#" ? 
+    `<a href="${project.sourceLink}" title="View Source Code" target="_blank">
+      <img src="./images/github.svg" class="work__code" alt="GitHub">
+    </a>` : '';
+
+  const companyBadge = project.company ? 
+    `<span class="project__company">${project.company} • ${project.year}</span>` : 
+    `<span class="project__year">${project.year}</span>`;
+
   return `
     <div class="work__box">
       <div class="work__text">
         <h3>${project.title}</h3>
+        ${companyBadge}
         <p>${project.description}</p>
         <ul class="work__list">
           ${project.technologies.map((tech) => `<li>${tech}</li>`).join("")}
         </ul>
         <div class="work__links">
-          <a href="${project.liveLink}" target="_blank" class="link__text">
-            Visit Site <span>&rarr;</span>
-          </a>
-          <a href="${project.sourceLink}" title="View Source Code" target="_blank">
-            <img src="./images/github.svg" class="work__code" alt="GitHub">
-          </a>
+          ${liveLink}
+          ${sourceLink}
         </div>
       </div>
       <div class="work__image-box">
