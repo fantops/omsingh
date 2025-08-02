@@ -109,9 +109,6 @@ const renderProject = (project) => {
           ${sourceLink}
         </div>
       </div>
-      <div class="work__image-box">
-        <img src="${project.image}" class="work__image" alt="Screenshot of ${project.title}" />
-      </div>
     </div>
   `;
 };
