@@ -139,40 +139,43 @@ document.addEventListener("DOMContentLoaded", () => {
   populateField("email-link", `mailto:${profileData.contact.email}`, true); // Used dynamic mailto
 
   // Populate Social Links
-  populateField("twitter-link", profileData.socialLinks.twitter, true);
   populateField("github-link", profileData.socialLinks.github, true);
   populateField("linkedin-link", profileData.socialLinks.linkedin, true);
 
-  document.getElementById("twitter-link").setAttribute("aria-label", "Twitter Profile");
   document.getElementById("github-link").setAttribute("aria-label", "GitHub Profile");
   document.getElementById("linkedin-link").setAttribute("aria-label", "LinkedIn Profile");
 
+  // Theme Toggle Functionality
   const themeToggleButton = document.getElementById("theme-toggle");
   const rootElement = document.documentElement; // Reference to the <html> element
-
+  
   if (!themeToggleButton) {
     console.error("Theme toggle button not found in the DOM.");
     return;
   }
 
-  const currentTheme = localStorage.getItem("theme") || "light";
+  const currentTheme = localStorage.getItem("theme") || "dark";
 
   // Apply the saved theme on load
   rootElement.setAttribute("data-theme", currentTheme);
-  themeToggleButton.textContent = currentTheme === "dark" ? "Light Mode" : "Dark Mode";
-
-  // Debugging log
-  console.log(`Initial theme: ${currentTheme}`);
+  themeToggleButton.textContent = currentTheme === "dark" ? "☀️" : "🌙";
 
   themeToggleButton.addEventListener("click", () => {
     const newTheme = rootElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
     rootElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
-    themeToggleButton.textContent = newTheme === "dark" ? "Light Mode" : "Dark Mode";
-
-    // Debugging log
-    console.log(`Theme changed to: ${newTheme}`);
+    themeToggleButton.textContent = newTheme === "dark" ? "☀️" : "🌙";
   });
+
+  // Resume link handler - just ensure it opens in new tab
+  const resumeLink = document.getElementById("resume-link");
+  if (resumeLink) {
+    resumeLink.addEventListener("click", (e) => {
+      // Ensure it opens in new tab/window
+      window.open("./files/Om_Resume.pdf", "_blank", "noopener,noreferrer");
+      e.preventDefault(); // Prevent default to ensure our window.open works
+    });
+  }
 
   // ...existing code for other features...
 });

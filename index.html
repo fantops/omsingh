@@ -1,16 +1,18 @@
 <!-- 
-  Hello 😊.
+  Om Singh - Software Engineer Portfolio
+  
+  A modern, professional portfolio showcasing AI/ML validation expertise
+  and software engineering experience.
 
-  This template is designed and developed by Om Singh
-  for anyone to use for free or customize the way they like.
+  Live Site: https://fantops.github.io/omsingh/
+  GitHub: https://github.com/fantops/omsingh
 
-  Github Repo: https://github.com/fantops/omsingh
-  My Website: https://fantops.github.io/omsingh/
-
+  Template available for use under MIT License.
 -->
 
 <!--
-  Follow the instructions written in comments to create your stunning portfolio
+  This portfolio showcases professional experience in AI/ML system validation,
+  firmware development, and test automation with modern web technologies.
 -->
 
 <!DOCTYPE html>
@@ -38,9 +40,9 @@
 </head>
 
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <header class="header" role="banner" id="top">
+    <button id="theme-toggle" class="theme-toggle-corner" aria-label="Toggle Dark Mode">🌙</button>
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
@@ -48,10 +50,8 @@
           <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
           <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
           <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
-      <button id="theme-toggle" class="btn btn--pink" aria-label="Toggle Dark Mode">Dark Mode</button>
     </div>
     <div class="header__text-box row">
       <div class="header__text">
@@ -59,6 +59,7 @@
           <span>Om Prakash Singh</span>
         </h1>
         <p>Software Engineer | AI/ML Validation Expert | Microsoft</p>
+        <a id="resume-link" href="./files/Om_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--header">View Resume</a>
       </div>
     </div>
   </header>
@@ -78,7 +79,6 @@
               
               Beyond my professional work, I am passionate about advancing AI technologies through robust system-level validation and contributing to educational initiatives through <strong>Youth For Seva</strong>, promoting digital literacy in underprivileged communities.
             </p>
-            <a id="resume-link" href="./files/Om_Resume.pdf" target="_blank" class="btn">My Resume</a>
           </div>
           <div class="about__photo-container">
             <img class="about__photo" src="./images/MyPhoto.jpg" alt="Photo of Om Singh" />
@@ -213,50 +213,39 @@
     </section>
   </main>
 
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>I'm always interested in discussing new opportunities, innovative projects, and collaborations in AI/ML validation, firmware development, and system engineering.</p>
-        <div class="contact__details">
-          <div class="contact__item">
-            <strong>Email:</strong> <a href="mailto:omprakash300@gmail.com" id="email-link">omprakash300@gmail.com</a>
-          </div>
-          <div class="contact__item">
-            <strong>Phone:</strong> +91-7415741371
-          </div>
-          <div class="contact__item">
-            <strong>Location:</strong> Hyderabad, India
-          </div>
-        </div>
-        <a href="mailto:omprakash300@gmail.com" class="btn">Send me an Email</a>
-      </div>
-    </div>
-  </section>
-
   <footer role="contentinfo" class="footer">
     <div class="row">
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/omsinghbaba/" title="Link to Twitter Profile" target="_blank" id="twitter-link">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter Profile Icon">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/fantops" title="Link to Github Profile" target="_blank" id="github-link">
-            <img src="./images/github.svg" class="footer__social-image" alt="GitHub Profile Icon">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/omsingh-nitd/" target="_blank" id="linkedin-link">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="LinkedIn Profile Icon">
-          </a>
-        </li>
-      </ul>
-      <p>
-        &copy; <span id="year"></span> - Template designed & developed by 
-        <a href="https://fantops.github.io/omsingh/" class="link">Om Singh</a>.
-      </p>
+      <div class="footer__content">
+        <ul class="footer__contact-links">
+          <li class="footer__contact-item">
+            <a href="mailto:omprakash300@gmail.com" title="Email: omprakash300@gmail.com" id="email-link">
+              <img src="./images/email.svg" class="footer__contact-image" alt="Email Icon">
+            </a>
+          </li>
+          <li class="footer__contact-item">
+            <a href="tel:+917415741371" title="Phone: +91-7415741371">
+              <img src="./images/phone.svg" class="footer__contact-image" alt="Phone Icon">
+            </a>
+          </li>
+          <li class="footer__contact-item">
+            <a href="https://github.com/fantops" title="GitHub Profile" target="_blank" id="github-link">
+              <img src="./images/github.svg" class="footer__contact-image" alt="GitHub Profile Icon">
+            </a>
+          </li>
+          <li class="footer__contact-item">
+            <a href="https://www.linkedin.com/in/omsingh-nitd/" title="LinkedIn Profile" target="_blank" id="linkedin-link">
+              <img src="./images/linkedin.svg" class="footer__contact-image" alt="LinkedIn Profile Icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>
+          &copy; <span id="year"></span> - Template designed & developed by 
+          <a href="https://fantops.github.io/omsingh/" class="link">Om Singh</a>.
+        </p>
+      </div>
     </div>
   </footer>
 
