@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (resumeLink) {
     resumeLink.addEventListener("click", (e) => {
       // Ensure it opens in new tab/window
-      window.open("./files/Om_Resume.pdf", "_blank", "noopener,noreferrer");
+      window.open("./files/Om_Singh_CV.pdf", "_blank", "noopener,noreferrer");
       e.preventDefault(); // Prevent default to ensure our window.open works
     });
   }
